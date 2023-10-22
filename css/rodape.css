@@ -83,6 +83,13 @@ form .enviar input{
   box-sizing: border-box;
 }
 
+div input[type="text"],
+div input[type="email"],
+div textarea{
+  padding-left: 10px;
+}
+
+
 form input:focus,form textarea:focus{
   background-color: white;
   color: black;
