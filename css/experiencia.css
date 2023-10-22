@@ -1,0 +1,140 @@
+.experiencia {
+  max-width: 1440px;
+  display: grid;
+  padding: 120px 20px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  background-image: url(/img/back-decorator.svg);
+  background-attachment: fixed;
+}
+
+
+.experiencia .sub {
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Exo 2', sans-serif;
+  grid-column: 1 / -1;
+  line-height: 1;
+  font-size: 2.3rem;
+}
+
+.experiencia-paragrafo {
+  font-size: 1.4rem;
+  line-height: 1.3;
+  color: black;
+  margin-bottom: 80px;
+  max-width: 40ch;
+}
+
+.experiencia-paragrafo strong {
+  color: #000535;
+}
+
+.cliente {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  position: relative;
+  background: #E0E3FD; 
+}
+
+.cliente::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 16px;
+  background: linear-gradient(180deg, #182176 0%, rgba(71, 81, 173, 0.71) 78.57%);
+  position: absolute;
+  top: 28px;
+  left: 10px;
+  transform: rotate(90deg); /* Rotacionar 90 graus para a direita */
+  transform-origin: top left;
+  display: none;
+}
+
+.cliente:hover {
+  background: #d7dbfc;
+}
+
+.cliente:hover::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 16px;
+  background: linear-gradient(180deg, #182176 0%, rgba(71, 81, 173, 0.71) 78.57%);
+  position: absolute;
+  top: 28px;
+  left: 10px;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+
+.cliente-ano-inicio {
+  position: absolute;
+  top: 22px;
+  left: -100px;
+  text-align: right;
+  width: 80px;
+  color: #525252;
+  font-size: 0.875rem;
+}
+
+.cliente-nome {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+  color: #000535;
+}
+
+.cliente-resumo-projeto {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #000535;
+}
+
+.tecnologia-usada {
+  display: flex;
+  align-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tecnologia-usada li {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding: 5px 12px;
+  border-radius: 6px;
+  color: #E0E3FD;
+  background: #4751AD;
+}
+
+@media (max-width: 945px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+  .experiencia-paragrafo {
+    font-size: 1.3rem;
+    max-width: 42ch;
+  }
+  .cliente-ano-inicio {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .ilustracao-1{
+    display: none;
+  }.cliente :hover::before{
+    display: none;
+  }
+}
+

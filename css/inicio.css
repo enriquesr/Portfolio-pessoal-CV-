@@ -1,0 +1,119 @@
+.inicio {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  padding: 40px 20px 120px 20px;
+  margin: 0 auto;
+  gap: 197px;
+  align-items: center;
+  background-image: url(/img/back-decorator.svg);
+  background-attachment: fixed;
+}
+
+@keyframes transicaoCor {
+  0% {
+    color: #9199E2;
+  }
+  50% {
+    color: #182176;
+  }
+  100% {
+    color: #9199E2;
+  }
+}
+
+.inicio .enrique-contato h1 .meunome {
+  animation: transicaoCor 3s linear infinite;
+}
+
+@keyframes efeitoBotao {
+  0% {
+    transform: translateX(-1px);
+  }
+  50% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(-1px);
+  }
+}
+
+.inicio .enrique-contato .link-github-pc img:hover {
+  animation: efeitoBotao  0.1s ease-in-out;
+}
+
+
+.inicio h1 {
+  font-size: 4rem;
+  line-height: 1.12;
+  margin-bottom: 20px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+
+.enrique-contato{
+  display: flex;
+  flex-direction: column;
+  gap: 24px 0;
+}
+
+@media (max-width: 1231px){
+  .inicio h1 {
+    font-size: 3rem;
+    
+  }
+  .enrique-contato{
+    gap: 80px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .inicio h1 {
+    font-size: 3rem;
+    
+  }
+  .inicio{
+    gap: 80px;
+  }
+}
+
+@media (max-width: 945px) {
+  .inicio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+    
+  }
+  .enrique-contato h1{
+    text-align: center;
+  }
+  .inicio h1 {
+    font-size: 2rem;
+  }
+  .inicio h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+  .inicio img{
+    margin: 0 auto;
+    display: block;
+  }
+  .enrique-contato{
+    align-self: center;
+    margin: 0 auto;
+  }
+  .link-github-pc{
+    display: none;
+  }
+}
+
+
+@media (min-width: 946px){
+  .link-github-portatil{
+    display: none;
+  }
+}
+
+

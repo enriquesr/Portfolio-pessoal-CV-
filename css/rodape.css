@@ -1,0 +1,96 @@
+.contato-layout {
+  background: #000000
+}
+
+
+.contato  {
+  max-width: 1440px;
+  padding:  120px 20px;
+  padding: 120px 20px 270px 20px;
+  margin: 0 auto;
+  display: flex;
+  gap: 197px;
+  justify-content: space-evenly;
+  }
+
+ 
+  .contato .sub{
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 2.3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  }
+
+
+  .meu-contato{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-right: 80px;
+  }
+
+  .meu-contato .number{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .meu-contato .email{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+.form{
+  display: flex;
+  align-items:start;
+  justify-content: center;
+  height: 60vh;
+}
+
+.form form div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+form label{
+  font-family: 'Exo2', sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 5px;
+}
+
+form input, form textarea{
+  outline: unset;
+  padding: 20px;
+  width: 280px;
+  border: 1px solid white;
+  border-radius: 6px;
+  background: black;
+  font-size: 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+form .enviar input{
+  background: #182176;
+  color: #E0E3FD;
+
+}
+form input:focus,form textarea:focus{
+  background-color: white;
+}
+
+@media (max-width: 945px){
+  .contato{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .meu-contato .email, .number{
+    margin: 0 auto;
+  }
+}

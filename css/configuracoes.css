@@ -1,0 +1,39 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0px;
+  color: #141414;
+}
+
+h1, h2, h3, p {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.subtitulo {
+  text-transform: uppercase;
+  font-size: 8rem;
+  line-height: 1.1;
+}
+
+@media (max-width: 945px) {
+  .sub {
+    text-transform: capitalize;
+    font-size: 3rem;
+    max-width: initial !important;
+  }
+}
