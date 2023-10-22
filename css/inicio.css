@@ -6,7 +6,7 @@
   margin: 0 auto;
   gap: 197px;
   align-items: center;
-  background-image: url(/img/back-decorator.svg);
+  background-image: url(../img/back-decorator.svg);
   background-attachment: fixed;
 }
 
