@@ -66,8 +66,7 @@ form label{
 
 form input, form textarea{
   outline: unset;
-  padding: 20px;
-  width: 280px;
+  padding: 10px 0;
   border: 1px solid white;
   border-radius: 6px;
   background: black;
@@ -78,10 +77,16 @@ form input, form textarea{
 form .enviar input{
   background: #182176;
   color: #E0E3FD;
-
+  text-transform: uppercase;
+  width: 272px; 
+  padding: 20px;
+  box-sizing: border-box;
 }
+
 form input:focus,form textarea:focus{
   background-color: white;
+  color: black;
+  
 }
 
 @media (max-width: 945px){
